@@ -1,0 +1,32 @@
+.sidebar {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  box-sizing: border-box;
+  transition: all .5s;
+  font-family: Roboto,sans-serif;
+  background: #fdfdfd;
+  width: 300px;
+  overflow: hidden;
+  display: inline-block;
+  height: 100%;
+  position: fixed;
+  box-shadow: 2px 2px 5px rgba(0,0,0,.1);
+  z-index: 11!important;
+  margin-left: 0;
+}
+.sidebar-header {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  border: black 1px solid;
+  height: 10%;
+  background-color: #e91e63;
+}
+
+.container {
+  height: 100vh;
+}

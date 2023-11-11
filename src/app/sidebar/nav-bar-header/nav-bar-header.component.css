@@ -1,0 +1,80 @@
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container-right {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 50px;
+  max-height: 50px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.language {
+  margin-right: 15px;
+  font-size: 15px;
+  color: white;
+  font-weight: 600;
+}
+
+.language,
+.option {
+  position: relative;
+  display: inline-block;
+}
+
+.language-hover,
+.option-hover {
+  cursor: pointer;
+}
+
+.language-hover::after,
+.option-hover::after {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.option-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+}
+
+.language-content{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+}
+
+.language-content a,
+.option-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.language:hover .language-content,
+.option:hover .option-content {
+  display: block;
+}
+
+i {
+  font-weight: 600;
+  color: white;
+}

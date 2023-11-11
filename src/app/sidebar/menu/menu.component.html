@@ -1,0 +1,80 @@
+<div class="container">
+  <button type="button" class="button">
+    <i class="bi bi-person-vcard"></i>My Information
+  </button>
+  <button type="button" class="collapsible">
+    <i class="bi bi-shield-lock"></i>Admin
+    <ng-container *ngIf="isCollapsible[0]; else minusIcon">
+      <i class="bi bi-dash mr-right"></i>
+    </ng-container>
+    <ng-template #minusIcon>
+      <i class="bi bi-plus mr-right"></i>
+    </ng-template>
+  </button>
+  <div class="content">
+    <button type="button" class="content-button">
+      <i class="bi bi-person"></i>Users
+    </button>
+    <button type="button" class="content-button">
+      <i class="bi bi-person-gear"></i>Roles
+    </button>
+    <button type="button" class="content-button">
+      <i class="bi bi-people"></i>Clients
+    </button>
+    <button type="button" class="content-button">
+      <i class="bi bi-list-task"></i>Tasks
+    </button>
+    <button type="button" class="content-button">
+      <i class="bi bi-building"></i>Branches
+    </button>
+  </div>
+  <button type="button" class="collapsible" id="personalTimesheet">
+    <i class="bi bi-person-lines-fill"></i>Personal TimeSheet
+    <ng-container *ngIf="isCollapsible[1]; else minusIcon">
+      <i class="bi bi-dash mr-right"></i>
+    </ng-container>
+    <ng-template #minusIcon>
+      <i class="bi bi-plus mr-right"></i>
+    </ng-template>
+  </button>
+  <div class="content">
+    <button type="button" class="content-button">
+      <i class="bi bi-card-checklist"></i>My TimeSheet
+    </button>
+    <button type="button" class="content-button">
+      <i class="bi bi-calendar-week"></i>My Request Off/Remote/Onsite
+    </button>
+    <button type="button" class="content-button">
+      <i class="bi bi-calendar-date"></i>My Working Hour
+    </button>
+    <button type="button" class="content-button">
+      <i class="bi bi-airplane"></i>Request Team building
+    </button>
+  </div>
+  <button type="button" class="collapsible">
+    <i class="bi bi-kanban"></i>Management
+    <ng-container *ngIf="isCollapsible[2]; else minusIcon">
+      <i class="bi bi-dash mr-right"></i>
+    </ng-container>
+    <ng-template #minusIcon>
+      <i class="bi bi-plus mr-right"></i>
+    </ng-template>
+  </button>
+  <div class="content">
+    <button type="button" class="content-button">
+      <i class="bi bi-calendar2-check"></i>Manager Request Off/Remote/Onsite
+    </button>
+    <button type="button" class="content-button">
+      <i class="bi bi-alarm"></i>TimeSheet Manager
+    </button>
+    <button type="button" class="content-button">
+      <i class="bi bi-kanban"></i>Project Manager
+    </button>
+    <button type="button" class="content-button">
+      <i class="bi bi-person-check"></i>Manager employee working hour
+    </button>
+    <button type="button" class="content-button">
+      <i class="bi bi-airplane"></i>Team building
+    </button>
+  </div>  
+</div>
